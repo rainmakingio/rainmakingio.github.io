@@ -8,7 +8,13 @@
 
 */
 
-
+html, body {
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 30px;
+}
 
 /* Measure is limited to ~66 characters */
 .measure {
