@@ -1,0 +1,46 @@
+.pillar {
+  opacity: .4;
+  position: relative;
+}
+
+.pillar:after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 1px;
+  background: red;
+  position: absolute;
+  bottom: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0e122b+0,ffffff+100 */
+  background: #0e122b; /* Old browsers */
+  background: -moz-linear-gradient(left,  #0e122b 0%, #ffffff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #0e122b 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #0e122b 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e122b', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
+
+.pillar-box {
+  display: none;
+  background: #F5F5F5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.pillar-active {
+  opacity: 1;
+  position: fixed;
+  color: var(--rm-blue);
+  cursor: crosshair;
+}
+
+.pillar-active:after {
+  background: #0e122b; /* Old browsers */
+  background: -moz-linear-gradient(left,  var(--rm-blue) 0%, #ffffff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  var(--rm-blue) 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  var(--rm-blue) 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--rm-blue), endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}

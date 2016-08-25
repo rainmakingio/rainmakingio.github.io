@@ -4,36 +4,51 @@
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
     watch = require('gulp-watch'),
+    include = require('gulp-include'),
     css = require('css'),
     browserSync = require('browser-sync'),
     browserReload = browserSync.reload,
     child = require('child_process'),
     postcss = require('gulp-postcss'),
-    cssvariables = require('postcss-css-variables');
-    atImport = require("postcss-import")
+    cssvariables = require('postcss-css-variables'),
+    atImport = require("postcss-import"),
+    customMedia = require("postcss-custom-media");
+    include = require("gulp-include");
 
+gulp.task('jekyll', () => {
+  const jekyll = child.spawn('jekyll', ['serve',
+    '--watch',
+    '--incremental',
+    '--drafts'
+  ]);
 
-  gulp.task('jekyll', () => {
-    const jekyll = child.spawn('jekyll', ['serve',
-      '--watch',
-      '--incremental',
-      '--drafts'
-    ]);
+  const jekyllLogger = (buffer) => {
+    buffer.toString()
+      .split(/\n/)
+      .forEach((message) => gutil.log('Jekyll: ' + message));
+  };
 
-    const jekyllLogger = (buffer) => {
-      buffer.toString()
-        .split(/\n/)
-        .forEach((message) => gutil.log('Jekyll: ' + message));
-    };
+  jekyll.stdout.on('data', jekyllLogger);
+  jekyll.stderr.on('data', jekyllLogger);
+});
 
-    jekyll.stdout.on('data', jekyllLogger);
-    jekyll.stderr.on('data', jekyllLogger);
-  });
+gulp.task('js', function() {
+  gulp.src("js/main.js")
+    .pipe(include({
+      extensions: "js",
+      hardFail: true,
+      includePaths: [
+        __dirname + "/js"
+      ]
+    }))
+    .pipe(gulp.dest("_site/js/"));
+});
 
 gulp.task('css', function() {
   var processors = [
       atImport(),
-      cssvariables()
+      customMedia(),
+      cssvariables(),
   ];
   gulp.src('./css/main.css')
     .pipe(postcss(processors))
@@ -63,8 +78,9 @@ gulp.task('bs-reload', function () {
  • Reloads browsers when you change html or sass files
 
 */
-gulp.task('default', ['css', 'jekyll', 'bs-reload', 'browser-sync'], function(){
-  gulp.start(['css', 'bs-reload']);
+gulp.task('default', ['css', 'js', 'jekyll', 'bs-reload', 'browser-sync'], function(){
+  gulp.start(['css', 'js', 'bs-reload']);
   gulp.watch('css/**/*', ['css', 'bs-reload']);
-  gulp.watch(['*.html', './**/*.html'], ['bs-reload']);
+  gulp.watch('js/**/*', ['js', 'bs-reload']);
+  gulp.watch(['*.html', './**/*.html'], ['bs-reload','jekyll']);
 });

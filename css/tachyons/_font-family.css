@@ -6,7 +6,13 @@
 
 
 .sans-serif {
-  font-family: var(--graphik-font-family);
+  font-family: -apple-system, BlinkMacSystemFont,
+               'avenir next', avenir,
+               helvetica, 'helvetica neue',
+               ubuntu,
+               roboto, noto,
+               'segoe ui', arial,
+               sans-serif;
 }
 
 .serif {
@@ -84,3 +90,4 @@ code, .code {
   font-family: baskerville,
                serif;
 }
+

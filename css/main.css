@@ -2,3 +2,5 @@
 @import './tachyons/tachyons';
 
 @import './base/typography';
+
+@import './modules/_pillar';

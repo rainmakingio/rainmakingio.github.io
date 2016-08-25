@@ -1,6 +1,8 @@
 body {
   font-size: 13px;
   font-weight: 300;
+  color: var(--near-black);
+  line-height: 23px;
 }
 
 .caps-small-f {
@@ -8,4 +10,18 @@ body {
   font-family: var(--futura-font-family);
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.f1, .f2, .f3, .f4 {
+  font-family: var(--graphik-font-family);
+}
+
+.f1 {
+  font-weight: 100;
+  line-height: 2.2rem;
+}
+
+.f2 {
+  line-height: 2rem;
+  font-weight: 200;
 }

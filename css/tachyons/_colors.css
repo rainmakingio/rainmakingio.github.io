@@ -9,8 +9,10 @@
 */
 
 :root {
+  --rm-blue: #384BC5;
+
   --black: #000;
-  --near-black: #111;
+  --near-black: #070925;
   --dark-gray:#333;
   --mid-gray:#555;
   --gray: #777;
