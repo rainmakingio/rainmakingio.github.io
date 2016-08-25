@@ -1,17 +1,70 @@
-var gulp = require('gulp');
-var shell = require('gulp-shell');
-var browserSync = require('browser-sync').create();
+// Gulp tasks for JKL Tachyons
 
-// Task for building blog when something changed:
-gulp.task('build', shell.task(['bundle exec jekyll build --watch']));
-// Or if you don't use bundle:
-// gulp.task('build', shell.task(['jekyll build --watch']));
+// Load plugins
+var gulp = require('gulp'),
+    gutil = require('gulp-util'),
+    watch = require('gulp-watch'),
+    css = require('css'),
+    browserSync = require('browser-sync'),
+    browserReload = browserSync.reload,
+    child = require('child_process'),
+    postcss = require('gulp-postcss'),
+    cssvariables = require('postcss-css-variables');
+    atImport = require("postcss-import")
 
-// Task for serving blog with Browsersync
-gulp.task('serve', function () {
-    browserSync.init({server: {baseDir: '_site/'}});
-    // Reloads page when some of the already built files changed:
-    gulp.watch('_site/**/*.*').on('change', browserSync.reload);
+
+  gulp.task('jekyll', () => {
+    const jekyll = child.spawn('jekyll', ['serve',
+      '--watch',
+      '--incremental',
+      '--drafts'
+    ]);
+
+    const jekyllLogger = (buffer) => {
+      buffer.toString()
+        .split(/\n/)
+        .forEach((message) => gutil.log('Jekyll: ' + message));
+    };
+
+    jekyll.stdout.on('data', jekyllLogger);
+    jekyll.stderr.on('data', jekyllLogger);
+  });
+
+gulp.task('css', function() {
+  var processors = [
+      atImport(),
+      cssvariables()
+  ];
+  gulp.src('./css/main.css')
+    .pipe(postcss(processors))
+    .pipe(gulp.dest('./_site/css/'));
 });
 
-gulp.task('default', ['build', 'serve']);
+// Initialize browser-sync which starts a static server also allows for
+// browsers to reload on filesave
+gulp.task('browser-sync', function() {
+    browserSync.init(null, {
+        server: {
+            baseDir: "./_site/"
+        }
+    });
+});
+
+// Function to call for reloading browsers
+gulp.task('bs-reload', function () {
+    browserSync.reload();
+});
+
+/*
+   DEFAULT TASK
+
+ • Process sass then auto-prefixes and lints outputted css
+ • Starts a server on port 3000
+ • Reloads browsers when you change html or sass files
+
+*/
+gulp.task('default', ['css', 'jekyll', 'bs-reload', 'browser-sync'], function(){
+  gulp.start(['css', 'bs-reload']);
+  gulp.watch('css/**/*', ['css', 'bs-reload']);
+  gulp.watch(['*.html', './**/*.html'], ['bs-reload']);
+});

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp",
+    "ast": "gulp generateDocs"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,17 @@
   "homepage": "https://github.com/jasecoop/rainmaking#readme",
   "devDependencies": {
     "browser-sync": "^2.14.0",
+    "css": "^2.1.0",
+    "css-parse": "^2.0.0",
     "gulp": "^3.9.1",
-    "gulp-shell": "^0.5.2",
-    "lodash": "^4.15.0"
+    "gulp-file-include": "^0.5.1",
+    "gulp-postcss": "^6.1.1",
+    "gulp-shell": "^0.2.8",
+    "gulp-uncss": "^0.4.4",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^0.6.8",
+    "lodash": "^2.4.1",
+    "node-sass": "^0.9",
+    "postcss-css-variables": "^0.5.2"
   }
 }

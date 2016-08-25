@@ -1,0 +1,11 @@
+body {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.caps-small-f {
+  font-size: 13px;
+  font-family: var(--futura-font-family);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
