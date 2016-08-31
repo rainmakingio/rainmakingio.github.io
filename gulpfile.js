@@ -12,8 +12,9 @@ var gulp = require('gulp'),
     postcss = require('gulp-postcss'),
     cssvariables = require('postcss-css-variables'),
     atImport = require("postcss-import"),
-    customMedia = require("postcss-custom-media");
-    include = require("gulp-include");
+    customMedia = require("postcss-custom-media"),
+    include = require("gulp-include"),
+    at2x = require('postcss-at2x');
 
 gulp.task('jekyll', () => {
   const jekyll = child.spawn('jekyll', ['serve',
@@ -49,6 +50,7 @@ gulp.task('css', function() {
       atImport(),
       customMedia(),
       cssvariables(),
+      at2x(),
   ];
   gulp.src('./css/main.css')
     .pipe(postcss(processors))

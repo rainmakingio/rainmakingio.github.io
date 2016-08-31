@@ -1,6 +1,7 @@
 .pillar {
   opacity: .4;
   position: relative;
+  z-index: 0;
 }
 
 .pillar:after {
@@ -19,15 +20,27 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e122b', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
 }
 
-.pillar-box {
-  display: none;
-  background: #F5F5F5;
+.pillarbox {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  /*background: #F5F5F5;*/
   z-index: 1;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+60,ffffff+60,ffffff+100&1+61,0.7+100 */
+  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 60%, rgba(255,255,255,1) 61%, rgba(255,255,255,0.7) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 60%,rgba(255,255,255,1) 61%,rgba(255,255,255,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(255,255,255,1) 60%,rgba(255,255,255,1) 61%,rgba(255,255,255,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b3ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+
+.pillarbox-accelerators,
+.pillarbox-companies,
+.pillarbox-spaces,
+.pillarbox-events {
+  display: none;
 }
 
 .pillar-active {
@@ -35,6 +48,7 @@
   position: fixed;
   color: var(--rm-blue);
   cursor: crosshair;
+  z-index: 3;
 }
 
 .pillar-active:after {
@@ -44,3 +58,35 @@
   background: linear-gradient(to right,  var(--rm-blue) 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--rm-blue), endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
 }
+
+.pbc__text {
+  position: fixed;
+}
+
+.pbc__bg img {
+  height: 100%;
+}
+
+.pbc-accelerators__bg {
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(0% 0%, 40% 0%, 20% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 40% 0%, 20% 100%, 0% 100%);
+}
+
+.pbc-events__bg {
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(0% 0%, 20% 0%, 40% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 40% 0%, 20% 100%, 0% 100%);
+}
+
+.pbc-companies__bg img,
+.pbc-spaces__bg img {
+  width: 100%;
+}
+
+/*.pillarbox p {
+  background: #fff;
+  padding: 30px;
+}*/
