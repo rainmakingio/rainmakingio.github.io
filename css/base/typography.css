@@ -25,3 +25,9 @@ body {
   line-height: 2rem;
   font-weight: 200;
 }
+
+.text-small {
+  font-size: 10px;
+  letter-spacing: 1px;
+  line-height: 16px;
+}
