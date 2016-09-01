@@ -1,0 +1,69 @@
+.menu {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2e2f39+0,1d1e24+96 */
+background: rgb(46,47,57); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(46,47,57,1) 0%, rgba(29,30,36,1) 96%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(46,47,57,1) 0%,rgba(29,30,36,1) 96%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(46,47,57,1) 0%,rgba(29,30,36,1) 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2f39', endColorstr='#1d1e24',GradientType=0 ); /* IE6-9 */
+z-index: 9;
+left: -1000px;
+-webkit-transition: all 500ms ease-in-out;
+-moz-transition: all 500ms ease-in-out;
+-ms-transition: all 500ms ease-in-out;
+-o-transition: all 500ms ease-in-out;
+transition: all 500ms ease-in-out;
+}
+
+.menu-active {
+  left: 0;
+}
+
+.menu__link {
+  color: rgba(255,255,255,.55);
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  font-family: 'Graphik';
+  font-weight: 100;
+  line-height: 28px;
+}
+
+.menu__link:hover {
+  color: rgba(255,255,255,.8);
+}
+
+.menu__close {
+  opacity: .5;
+  position: absolute;
+  right: 30px;
+}
+
+.menu__close:hover {
+  opacity: 1;
+}
+
+.menutoggle {
+  display: block;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  background: rgba(00,00,00,.08);
+  padding: 20px;
+  cursor: pointer;
+  z-index: 9;
+}
+
+.menutoggle:hover {
+  background: rgba(00,00,00,.12);
+}
+
+.menutoggle img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  opacity: .7;
+}
+
+.menutoggle:hover img {
+  opacity: 1;
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="17px" viewBox="0 0 20 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>menutoggle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square" opacity="0.699999988">
+        <g id="Partnership" transform="translate(-942.000000, -87.000000)" stroke="#0E122B" stroke-width="2">
+            <g id="Group" transform="translate(921.000000, 64.000000)">
+                <g id="menutoggle" transform="translate(31.000000, 31.000000) rotate(-180.000000) translate(-31.000000, -31.000000) translate(22.000000, 22.000000)">
+                    <path d="M0.264705882,1 L17.7352941,1" id="Line"></path>
+                    <path d="M0.264705882,9 L17.7352941,9" id="Line-Copy"></path>
+                    <path d="M0.264705882,16 L17.7352941,16" id="Line-Copy-2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

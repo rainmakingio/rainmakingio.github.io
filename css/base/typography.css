@@ -1,4 +1,5 @@
 body {
+  font-family: var(--graphik-font-family);
   font-size: 13px;
   font-weight: 300;
   color: var(--near-black);
@@ -7,6 +8,13 @@ body {
 
 .caps-small-f {
   font-size: 13px;
+  font-family: var(--futura-font-family);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.caps-xsmall-f {
+  font-size: 10px;
   font-family: var(--futura-font-family);
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -23,11 +31,25 @@ body {
 
 .f2 {
   line-height: 2rem;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 .text-small {
   font-size: 10px;
   letter-spacing: 1px;
   line-height: 16px;
+}
+
+.lead {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 100;
+}
+
+@media (--breakpoint-not-small) {
+  .lead {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 30px;
+  }
 }

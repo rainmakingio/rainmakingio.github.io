@@ -1,0 +1,19 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (--breakpoint-not-small) {
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+@media (--breakpoint-medium) {
+  .container {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
