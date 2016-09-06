@@ -45,12 +45,20 @@ transition: all 500ms ease-in-out;
 .menutoggle {
   display: block;
   position: fixed;
-  top: 40px;
-  right: 40px;
-  background: rgba(00,00,00,.08);
+  top: 0px;
+  right: 0px;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  background: #E1E3E5;
   padding: 20px;
   cursor: pointer;
   z-index: 9;
+}
+
+@media (--breakpoint-medium) {
+  .menutoggle {
+    margin-right: 0;
+  }
 }
 
 .menutoggle:hover {

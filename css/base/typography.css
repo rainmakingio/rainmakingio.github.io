@@ -2,12 +2,12 @@ body {
   font-family: var(--graphik-font-family);
   font-size: 13px;
   font-weight: 300;
-  color: var(--near-black);
+  color: var(--rm-text);
   line-height: 23px;
 }
 
 .caps-small-f {
-  font-size: 13px;
+  font-size: 12px;
   font-family: var(--futura-font-family);
   letter-spacing: 1px;
   text-transform: uppercase;

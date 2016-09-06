@@ -10,8 +10,14 @@
   text-decoration: none;
   text-align: center;
   padding: 20px 50px;
+  outline: none;
+  border: none;
 }
 
 .btn:hover {
   background: var(--rm-blue-dark);
+}
+
+.btn-small {
+  padding: 10px 20px;
 }

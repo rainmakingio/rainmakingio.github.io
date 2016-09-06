@@ -13,5 +13,7 @@
 @import './modules/_slash';
 @import './modules/_slashHeader';
 @import './modules/_post';
+@import './modules/_forms';
+@import './modules/_link';
 
 @import './modules/_indexb';

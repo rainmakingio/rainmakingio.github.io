@@ -1,12 +1,30 @@
 .slashHeader__bg {
-  position: absolute;
-  width: 100%;
   height: 600px;
-  top: 0;
-  -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 500px, 20% 0);
-  clip-path: polygon(0 0%, 100% 0%, 100% 500px, 20% 0);
+  overflow: hidden;
+  display: none;
 }
 
-.slashHeader__bg img {
-  width: 100%;
+@media (--breakpoint-not-small) {
+  .slashHeader__bg {
+    display: block;
+  }
+
+  .slashHeader__bg img {
+    margin-left: 20%;
+  }
+}
+
+@media (--breakpoint-medium) {
+  .slashHeader__bg {
+    -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 500px, 20% 0);
+    clip-path: polygon(0 0%, 100% 0%, 100% 500px, 20% 0);
+  }
+}
+
+
+@media (--breakpoint-large) {
+  .slashHeader__bg {
+    -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 600px, 20% 0);
+    clip-path: polygon(0 0%, 100% 0%, 100% 600px, 20% 0);
+  }
 }

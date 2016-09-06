@@ -1,0 +1,5 @@
+.link {
+  color: var(--rm-text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rm-blue);
+}
