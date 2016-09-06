@@ -1,0 +1,12 @@
+.homeoutro {
+  display: block;
+  width: 100%;
+  height: 550px;
+  background-image: url('/assets/images/outro.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.homeoutro h2 {
+  /*line-height: 550px;*/
+}

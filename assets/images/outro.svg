@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1024px" height="453px" viewBox="0 0 1024 453" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1024" height="480"></rect>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#3E38D8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#3E38D8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="105.107887%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#3E38D8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-3.89105058%" y1="0%" x2="100%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#3E38D8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(0.000000, -4007.000000)">
+            <g id="Group-7" transform="translate(0.000000, 3984.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Rectangle-3"></g>
+                <g id="Group-2" mask="url(#mask-2)">
+                    <g transform="translate(-70.000000, 24.000000)">
+                        <path d="M406.5,367.5 L714.499991,442.5" id="Line" stroke="url(#linearGradient-3)" stroke-linecap="square" fill="none"></path>
+                        <path d="M868.5,173.5 L585.5,217.500002" id="Line" stroke="url(#linearGradient-4)" stroke-linecap="square" fill="none"></path>
+                        <path d="M715.5,443.500002 L611.5,270.5" id="Line" stroke="url(#linearGradient-5)" stroke-linecap="square" fill="none"></path>
+                        <path d="M716.5,442.5 L874.500007,194.5" id="Line" stroke="url(#linearGradient-4)" stroke-linecap="square" fill="none"></path>
+                        <path d="M720.5,443.5 L992.499991,363.5" id="Line" stroke="url(#linearGradient-4)" stroke-linecap="square" fill="none"></path>
+                        <path d="M993.035714,364.194611 L584.5,218.5" id="Line" stroke="url(#linearGradient-4)" stroke-linecap="square" fill="none"></path>
+                        <path d="M658.5,0.5 L584.5,218.5" id="Line" stroke="url(#linearGradient-4)" stroke-linecap="square" fill="none"></path>
+                        <path d="M988.5,363.5 L1163.5,120.5" id="Line" stroke="url(#linearGradient-4)" stroke-linecap="square" fill="none"></path>
+                        <path d="M988.5,363.5 L1233.5,551.5" id="Line" stroke="url(#linearGradient-4)" stroke-linecap="square" fill="none"></path>
+                        <path d="M390.5,312.500004 L586.500004,217.5" id="Line" stroke="url(#linearGradient-6)" stroke-linecap="square" fill="none"></path>
+                        <path d="M204.5,170.5 L585.500004,218.5" id="Line" stroke="url(#linearGradient-6)" stroke-linecap="square" fill="none"></path>
+                        <path d="M207.5,172.5 L329.499997,344.500004" id="Line" stroke="url(#linearGradient-6)" stroke-linecap="square" fill="none"></path>
+                        <path d="M35.5,291.5 L329.500004,346.5" id="Line" stroke="url(#linearGradient-6)" stroke-linecap="square" fill="none"></path>
+                        <path d="M1.50000001,450.500004 L330.500004,347.5" id="Line" stroke="url(#linearGradient-6)" stroke-linecap="square" fill="none"></path>
+                        <ellipse id="Oval-8-Copy-3" stroke="#3E38D8" fill="#FFFFFF" fill-rule="evenodd" cx="584.39825" cy="218.571856" rx="7.5053931" ry="7.5"></ellipse>
+                        <ellipse id="Oval-8-Copy-2" stroke="#3E38D8" fill="#FFFFFF" fill-rule="evenodd" cx="886.183965" cy="169.5" rx="7.5053931" ry="7.5"></ellipse>
+                        <ellipse id="Oval-8-Copy" stroke="#3E38D8" fill="#FFFFFF" fill-rule="evenodd" cx="329.505393" cy="346.5" rx="7.5053931" ry="7.5"></ellipse>
+                        <ellipse id="Oval-8" stroke="#3E38D8" fill="#FFFFFF" fill-rule="evenodd" cx="715.64825" cy="443.41018" rx="7.5053931" ry="7.5"></ellipse>
+                        <ellipse id="Oval-8-Copy-2" stroke="#3E38D8" fill="#FFFFFF" fill-rule="evenodd" cx="988.666107" cy="364.659162" rx="7.5053931" ry="7.5"></ellipse>
+                        <path d="M69.5,297.5 L205.5,171.5" id="Line" stroke="url(#linearGradient-4)" stroke-linecap="square" fill="none"></path>
+                        <path d="M180.5,14.5 L204.5,170.5" id="Line" stroke="url(#linearGradient-3)" stroke-linecap="square" fill="none"></path>
+                        <ellipse id="Oval-8-Copy-5" stroke="#3E38D8" fill="#FFFFFF" fill-rule="evenodd" cx="363.505393" cy="235.5" rx="7.5053931" ry="7.5"></ellipse>
+                        <ellipse id="Oval-8-Copy-6" stroke="#C2C2C2" fill="#FFFFFF" fill-rule="evenodd" cx="986.505393" cy="100.5" rx="7.5053931" ry="7.5"></ellipse>
+                        <ellipse id="Oval-8-Copy-6" stroke="#C2C2C2" fill="#FFFFFF" fill-rule="evenodd" cx="796.505393" cy="220.5" rx="7.5053931" ry="7.5"></ellipse>
+                        <ellipse id="Oval-8-Copy-6" stroke="#C2C2C2" fill="#FFFFFF" fill-rule="evenodd" cx="446.505393" cy="130.5" rx="7.5053931" ry="7.5"></ellipse>
+                        <ellipse id="Oval-8-Copy-6" stroke="#C2C2C2" fill="#FFFFFF" fill-rule="evenodd" cx="536.505393" cy="330.5" rx="7.5053931" ry="7.5"></ellipse>
+                        <ellipse id="Oval-8-Copy-6" stroke="#C2C2C2" fill="#FFFFFF" fill-rule="evenodd" cx="176.505393" cy="430.5" rx="7.5053931" ry="7.5"></ellipse>
+                        <ellipse id="Oval-8-Copy-4" stroke="#3E38D8" fill="#FFFFFF" fill-rule="evenodd" cx="204.505393" cy="170.5" rx="7.5053931" ry="7.5"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

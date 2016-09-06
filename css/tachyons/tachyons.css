@@ -71,6 +71,7 @@
 @import './_vertical-align';
 @import './_hovers';
 @import './_styles';
+@import './_z-index';
 
 /* Variables */
 /* Importing here will allow you to override any variables in the modules */
