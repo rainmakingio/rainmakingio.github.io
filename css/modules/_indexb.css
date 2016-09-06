@@ -1,0 +1,73 @@
+.sidebar {
+ background: red;
+ position: relative;
+ height: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2e2f39+0,1d1e24+96 */
+}
+
+.sidebarcontainer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 40%;
+  height: 100%;
+  text-align: center;
+  background: rgb(46,47,57); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(46,47,57,1) 0%, rgba(29,30,36,1) 96%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(46,47,57,1) 0%,rgba(29,30,36,1) 96%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(46,47,57,1) 0%,rgba(29,30,36,1) 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2f39', endColorstr='#1d1e24',GradientType=0 ); /* IE6-9 */
+  }
+
+.sidebarlogobig {
+  margin-top: 58%;
+}
+
+.blurb {
+  margin-top: 40%;
+}
+
+
+.sidebarmenu > div {
+  color: #fff;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.sidebarmenu__title {
+  letter-spacing: 2px;
+  font-size: 100;
+}
+
+.sidebarmenu__name {
+  opacity: .3;
+}
+
+.sidebarmenu__name.active {
+  opacity: .7;
+}
+
+.sidebarmenu {
+  display: none;
+  position: fixed;
+  top: 50%;
+  margin-top: -30px;
+}
+
+.sidebarlogosmall {
+  position: fixed;
+  display: none;
+  top: 40px;
+  left: 40px;
+}
+
+.sidebarmenulink {
+  position: fixed;
+  top: 50px;
+  left: 370px;
+  color: #fff;
+  opacity: .1;
+  font-size: 10px;
+  letter-spacing: 2px;
+  display: none;
+}

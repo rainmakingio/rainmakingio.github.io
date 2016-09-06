@@ -39,17 +39,6 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
 }
 
-.partnershipQuote__content:before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 32px;
-  background-image: url('../assets/images/speechmarks.png');
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
 @media (--breakpoint-medium) {
   .partnershipQuote__img,
   .partnershipQuote__img__border {
@@ -58,10 +47,6 @@
 }
 
 @media (--breakpoint-large) {
-  .partnershipQuote__content:before {
-    left: 0px;
-    top: -25px;
-  }
   .partnershipQuote__img {
     height: 550px;
     position: relative;
@@ -82,8 +67,8 @@
 
   .partnershipQuote-left .partnershipQuote__img,
   .partnershipQuote-left .partnershipQuote__img__border  {
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 550px, 0% 100px);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 550px, 0% 100px);
+    -webkit-clip-path: polygon(20% 0%, 100% 0%, 100% 600px, 20% 0px);
+    clip-path:  polygon(20% 0%, 100% 0%, 100% 600px, 20% 0px);
     text-align: right;
   }
 

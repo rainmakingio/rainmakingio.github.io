@@ -1,0 +1,12 @@
+.slashHeader__bg {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  top: 0;
+  -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 500px, 20% 0);
+  clip-path: polygon(0 0%, 100% 0%, 100% 500px, 20% 0);
+}
+
+.slashHeader__bg img {
+  width: 100%;
+}

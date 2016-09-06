@@ -1,0 +1,40 @@
+.posts {
+  width: 100%;
+  max-width: 1600px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f0f1f3+100 */
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(240,241,243,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(240,241,243,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(240,241,243,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f1f3',GradientType=0 ); /* IE6-9 */
+
+}
+
+.post {
+  min-height: 300px;
+  margin-bottom: 40px;
+}
+
+.post__img {
+  display: block;
+  width: 70%;
+  height: 300px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 70% 300px, 0% 300px);
+  clip-path:  polygon(0% 0%, 100% 0%, 70% 300px, 0% 300px);
+}
+
+.post__img img {
+  width: 100%;
+}
+
+.post__content {
+  z-index: 2;
+  width: 50%;
+  background: #fff;
+  position: relative;
+  margin-top: 20px;
+  margin-right: 100px;
+}

@@ -1,0 +1,17 @@
+.speechmarks:before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 32px;
+  background-image: url('../assets/images/speechmarks.png');
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+@media (--breakpoint-large) {
+  .speechmarks:before {
+    left: 0px;
+    top: -25px;
+  }
+}
