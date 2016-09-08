@@ -1,0 +1,23 @@
+.linkedinIcon,
+.twitterIcon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  opacity: .8;
+}
+
+.linkedinIcon:hover,
+.twitterIcon:hover {
+  opacity: 1;
+}
+
+.linkedinIcon {
+  margin-left: 10px;
+  background-image: url(/assets/images/linkedinIcon.svg);
+}
+.twitterIcon {
+  background-image: url(/assets/images/twitterIcon.svg);
+}
