@@ -8,10 +8,6 @@
   .slashHeader__bg {
     display: block;
   }
-
-  .slashHeader__bg img {
-    margin-left: 20%;
-  }
 }
 
 @media (--breakpoint-medium) {
@@ -26,5 +22,19 @@
   .slashHeader__bg {
     -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 600px, 20% 0);
     clip-path: polygon(0 0%, 100% 0%, 100% 600px, 20% 0);
+  }
+}
+
+
+.slashHeader-post .slashHeader__bg {
+  display: block;
+  height: auto;
+}
+
+@media (--breakpoint-large) {
+  .slashHeader-post .slashHeader__bg {
+    height: 600px;
+    -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 600px, 0% 340px);
+    clip-path: polygon(0 0%, 100% 0%, 100% 600px, 0% 340px);
   }
 }

@@ -1,5 +1,4 @@
 .sidebar {
- background: red;
  position: relative;
  height: 100%;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2e2f39+0,1d1e24+96 */
@@ -9,7 +8,7 @@
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 40%;
+  width: 25%;
   height: 100%;
   text-align: center;
   background: rgb(46,47,57); /* Old browsers */
@@ -17,14 +16,19 @@
   background: -webkit-linear-gradient(top,  rgba(46,47,57,1) 0%,rgba(29,30,36,1) 96%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  rgba(46,47,57,1) 0%,rgba(29,30,36,1) 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2f39', endColorstr='#1d1e24',GradientType=0 ); /* IE6-9 */
-  }
+}
+
+.sidebarC .sidebarcontainer {
+  /* Rectangle 298: */
+  background-image: linear-gradient(-180deg, rgba(233,236,237,0.00) 0%, #E9ECED 98%);
+}
 
 .sidebarlogobig {
-  margin-top: 58%;
+  margin-top: 100%;
 }
 
 .blurb {
-  margin-top: 40%;
+  margin-top: 30%;
 }
 
 
@@ -32,6 +36,10 @@
   color: #fff;
   text-align: left;
   margin-left: 40px;
+}
+
+.sidebarC .sidebarmenu > div {
+  color: var(--rm-text);
 }
 
 .sidebarmenu__title {
@@ -64,10 +72,14 @@
 .sidebarmenulink {
   position: fixed;
   top: 50px;
-  left: 370px;
+  left: 210px;
   color: #fff;
   opacity: .1;
   font-size: 10px;
   letter-spacing: 2px;
   display: none;
+}
+
+.sidebarC .sidebarmenulink {
+  color: var(--rm-text);
 }

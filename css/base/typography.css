@@ -20,6 +20,12 @@ body {
   text-transform: uppercase;
 }
 
+.fxl {
+  font-size: 53px;
+  font-weight: 100;
+  line-height: 1.2em;
+}
+
 .f1, .f2, .f3, .f4 {
   font-family: var(--graphik-font-family);
 }
@@ -42,14 +48,23 @@ body {
 
 .lead {
   font-size: 16px;
-  line-height: 28px;
+  line-height: 25px;
   font-weight: 100;
 }
 
-@media (--breakpoint-not-small) {
+@media (--breakpoint-large) {
   .lead {
     font-size: 20px;
-    font-weight: 100;
     line-height: 30px;
   }
+}
+
+.link {
+  border-bottom: solid 1px var(--rm-blue);
+  text-decoration: none;
+  color: var(--rm-blue);
+}
+
+.greyText {
+  color: #7E7E7E;
 }

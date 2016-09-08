@@ -1,0 +1,38 @@
+.aboutHeroImg1,
+.aboutHeroImg2 {
+  display: none;
+  height: 616px;
+  top: 0;
+  right: 0;
+  text-align: right;
+}
+
+@media (--breakpoint-large) {
+  .aboutHeroImg1 {
+    display: block;
+    text-align: right;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 600px, 30% 0px);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 600px, 30% 0px);
+    z-index: 2;
+  }
+  .aboutHeroImg2 {
+    top: 300px;
+    display: block;
+    z-index: 1;
+    -webkit-clip-path: polygon(0% 105%, 100% 0%, 100% 100%, 0% 550px);
+    clip-path: polygon(0% 105%, 100% 0%, 100% 100%, 0% 550px);
+  }
+  .aboutContent {
+    margin-top: 320px;
+  }
+}
+
+.aboutMenu {
+  display: none;
+}
+
+@media (--breakpoint-large) {
+  .aboutMenu {
+    display: block;
+  }
+}

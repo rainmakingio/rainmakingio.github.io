@@ -21,3 +21,8 @@
 .btn-small {
   padding: 10px 20px;
 }
+
+.btn-nopad {
+  padding-left: 0;
+  padding-right: 0;
+}

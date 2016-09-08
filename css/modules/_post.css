@@ -46,8 +46,52 @@
   background: #fff;
 }
 
+.articleEventCta {
+  margin-top: -110px;
+  position: relative;
+  z-index: 2;
+}
+
+.articleEventCta {
+  z-index: 2;
+  position: relative;
+}
+
 @media (--breakpoint-large) {
   .post__content {
     margin-top: 20px;
+  }
+}
+
+@media (--breakpoint-medium) {
+  .articleContent {
+    margin-top: -280px;
+  }
+  .articleEventCta {
+    margin-top: -280px;
+  }
+  .articleAuthor {
+    margin-top: -160px;
+  }
+}
+
+@media (--breakpoint-large) {
+  .articleContent {
+    margin-top: -110px;
+  }
+
+  .articleAuthor {
+    margin-top: -180px;
+  }
+  .articleEventCta {
+    margin-top: -170px;
+    z-index: 2;
+    position: relative;
+  }
+}
+
+@media (--breakpoint-not-small) {
+  .articleInlineAuthor {
+    display: none;
   }
 }

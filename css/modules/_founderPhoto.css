@@ -1,0 +1,84 @@
+.founderPhoto__img {
+  height: 330px;
+  background: #fff;
+}
+
+.founderPhoto {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 2;
+}
+
+.founderPhoto-fixed {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.founderPhoto img {
+  position: absolute;
+  display: none;
+}
+
+.founderPhoto img.active {
+  position: relative;
+  display: inline-block;
+}
+
+.founder.active .founder__name {
+  color: var(--rm-blue);
+}
+
+.founderPhoto {
+  width: 100%;
+  height: 250px;
+  text-align: center;
+}
+
+
+.founderPhoto .partnershipQuote__img,
+.founderPhoto .partnershipQuote__img__border,
+.founderPhoto .partnershipQuote__gradient {
+  height: 250px;
+}
+
+
+.founderPhoto img {
+  height: 250px;
+  width: auto;
+  z-index: 1;
+}
+
+.founders {
+  margin-top: 300px;
+  z-index: 1;
+  position: relative;
+}
+
+.founder {
+  margin-bottom: 0px;
+}
+
+@media (--breakpoint-large) {
+  .founderPhoto {
+    height: 550px;
+    text-align: center;
+    z-index: -1;
+  }
+
+
+  .founderPhoto .partnershipQuote__img,
+  .founderPhoto .partnershipQuote__img__border,
+  .founderPhoto .partnershipQuote__gradient {
+    height: 550px;
+  }
+
+
+  .founderPhoto img {
+    width: auto;
+    height: auto;
+    z-index: 1;
+  }
+}
