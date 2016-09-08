@@ -1,22 +1,31 @@
-<div class="menu w-100 w-50-m w-33-l fixed top-0 left-0 bottom-0">
+<div class="menu w-100 w-50-m w-40-l fixed top-0 left-0 bottom-0 {% if include.static %}menu-active{% endif %}">
   <div class="pa4">
     <a href="">
       <img class="mb5" src="/assets/images/logo_text_white.svg" />
     </a>
-    <a class="menu__close" href="">
-      <img class="mb5" src="/assets/images/close.svg" />
-    </a>
+
+    {% unless include.static %}
+      <a class="menu__close" href="">
+        <img class="mb5" src="/assets/images/close.svg" />
+      </a>
+    {% endunless %}
     <a class="menu__link" href="/">Partnerships</a>
-    <a class="menu__link" href="/events">Events</a>
-    <a class="menu__link mb4" href="/blog">Blog</a>
     <a class="menu__link" href="/about">About</a>
+    <a class="menu__link" href="/events">Events</a>
+    <a class="menu__link" href="/blog">Blog</a>
     <a class="menu__link mb4" href="">Contact</a>
-    <a class="menu__link" href="">Spaces</a>
+
+    <span class="caps-xsmall-f white">Learn more about our</span>
+    <a class="minipage menu__link menuSpaces" href="/spaces">Spaces</a>
     <a class="menu__link" href="">Companies</a>
-    <a class="menu__link" href="">Accelerator</a>
+    <a class="menu__link" href="">Accelerators</a>
   </div>
 </div>
 
 <a class="menutoggle">
   <img src="/assets/images/menutoggle.svg" />
 </a>
+
+<div class="miniSite w-100 w-50-m w-75-l right-0">
+
+</div>

@@ -1,11 +1,14 @@
 $(document).ready(function(){
-  $('.menutoggle').on('click', function(e) {
-      e.preventDefault();
+
+  $('body').on('click', '.menutoggle', function(e) {
+    e.preventDefault();
     $('.menu').addClass('menu-active');
   });
 
-  $('.menu__close').on('click', function(e) {
+  $('body').on('click', '.menu__close', function(e) {
     e.preventDefault();
     $('.menu').removeClass('menu-active');
+
+    $('.minipageContainer.active').removeClass('active');
   });
 });
