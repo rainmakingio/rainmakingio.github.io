@@ -34,6 +34,7 @@ jQuery(document).ready(function() {
 			} else {
 				$('.minipageContainer').html(d);
 				$('.minipageContainer').addClass('active');
+				$('body').addClass('minipage');
 			}
 
 			$(window).bind('scroll', scrollStuff);

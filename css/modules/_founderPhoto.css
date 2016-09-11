@@ -52,7 +52,7 @@
 }
 
 .founders {
-  margin-top: 50px;
+  margin-top: 230px;
   z-index: 1;
   position: relative;
 }
@@ -66,6 +66,11 @@
     height: 550px;
     text-align: center;
     z-index: -1;
+  }
+
+  .founders {
+    margin-top: 50px;
+
   }
 
 
