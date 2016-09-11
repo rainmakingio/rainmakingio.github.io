@@ -36,6 +36,8 @@ jQuery(document).ready(function() {
 				$('.minipageContainer').addClass('active');
 			}
 
+			$(window).bind('scroll', scrollStuff);
+
       // Pull the post we want out of the .content class.
 															// If you change the class of the post container,
 															// you must change it here!!!
