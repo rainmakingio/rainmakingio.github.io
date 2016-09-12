@@ -42,7 +42,7 @@ gulp.task('js', function() {
         __dirname + "/js"
       ]
     }))
-    .pipe(gulp.dest("_site/js/"));
+    .pipe(gulp.dest("./dist"));
 });
 
 gulp.task('css', function() {
@@ -54,7 +54,7 @@ gulp.task('css', function() {
   ];
   gulp.src('./css/main.css')
     .pipe(postcss(processors))
-    .pipe(gulp.dest('./_site/css/'));
+    .pipe(gulp.dest('./dist'));
 });
 
 // Initialize browser-sync which starts a static server also allows for
