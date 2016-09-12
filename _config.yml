@@ -21,4 +21,4 @@ defaults:
   values:
     layout: page
 permalink: pretty
-exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', node_modules, gulpfile.js]
+exclude: [node_modules, gulpfile.js]
