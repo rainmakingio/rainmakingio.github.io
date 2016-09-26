@@ -10073,54 +10073,57 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-var activeFounder = function(id, topMeasurement) {
-  if ($(window).scrollTop() > topMeasurement) {
-    $('.founder.active').removeClass('active');
-    $('.founderPhoto img.active').removeClass('active');
-    $(id + 'Photo').addClass('active');
-    $(id).addClass('active');
-  }
-}
+// var activeFounder = function(id, topMeasurement) {
+//   if ($(window).scrollTop() > topMeasurement) {
+//     $('.founder.active').removeClass('active');
+//     $('.founderPhoto img.active').removeClass('active');
+//     $(id + 'Photo').addClass('active');
+//     $(id).addClass('active');
+//   }
+// }
+//
+// var scrollStuff = function() {
+//
+//   var founderPhoto = $('.founderPhoto').offset().top;
+//   var founders = $('#founderNektarios').offset().top - 200;
+//   var founderDiff = 300;
+//   var founderJordan = $('#founderJordan').offset().top - founderDiff;
+//   var founderJakob = $('#founderJakob').offset().top - founderDiff;
+//   var founderAlex = $('#founderAlex').offset().top - founderDiff;
+//   var founderCarsten = $('#founderCarsten').offset().top - founderDiff;
+//   var founderNektarios = $('#founderNektarios').offset().top - founderDiff;
+//
+//   $(document).on('scroll', window, function() {
+//     if ($(window).scrollTop() > founderPhoto) {
+//       $('.founderPhoto').addClass('founderPhoto-fixed');
+//     }
+//     else {
+//       $('.founderPhoto').removeClass('founderPhoto-fixed').css('top', '');
+//     }
+//
+//     if ($(window).scrollTop() > founders) {
+//       $('.founderPhoto').removeClass('founderPhoto-fixed').css('top', founders);
+//     }
+//
+//     if ($(window).scrollTop() < founders && $(window).scrollTop() > founderPhoto ) {
+//       $('.founderPhoto').addClass('founderPhoto-fixed').css('top', 0);
+//     }
+//     activeFounder('#founderJordan', founderJordan);
+//     activeFounder('#founderJakob', founderJakob);
+//     activeFounder('#founderCarsten', founderCarsten);
+//     activeFounder('#founderAlex', founderAlex);
+//     activeFounder('#founderNektarios', founderNektarios);
+//   });
+//
+// }
+//
+// $(document).ready(function() {
+//   scrollStuff();
+// });
 
-var scrollStuff = function() {
 
-  var founderPhoto = $('.founderPhoto').offset().top;
-  var founders = $('#founderNektarios').offset().top - 200;
-  var founderDiff = 300;
-  var founderJordan = $('#founderJordan').offset().top - founderDiff;
-  var founderJakob = $('#founderJakob').offset().top - founderDiff;
-  var founderAlex = $('#founderAlex').offset().top - founderDiff;
-  var founderCarsten = $('#founderCarsten').offset().top - founderDiff;
-  var founderNektarios = $('#founderNektarios').offset().top - founderDiff;
 
-  $(document).on('scroll', window, function() {
-    if ($(window).scrollTop() > founderPhoto) {
-      $('.founderPhoto').addClass('founderPhoto-fixed');
-    }
-    else {
-      $('.founderPhoto').removeClass('founderPhoto-fixed').css('top', '');
-    }
-
-    if ($(window).scrollTop() > founders) {
-      $('.founderPhoto').removeClass('founderPhoto-fixed').css('top', founders);
-    }
-
-    if ($(window).scrollTop() < founders && $(window).scrollTop() > founderPhoto ) {
-      $('.founderPhoto').addClass('founderPhoto-fixed').css('top', 0);
-    }
-    activeFounder('#founderJordan', founderJordan);
-    activeFounder('#founderJakob', founderJakob);
-    activeFounder('#founderCarsten', founderCarsten);
-    activeFounder('#founderAlex', founderAlex);
-    activeFounder('#founderNektarios', founderNektarios);
-  });
-
-}
-
-$(document).ready(function() {
-  scrollStuff();
-});
-
+// ----
 
 
 // $(document).ready(function(){
@@ -10276,48 +10279,50 @@ $(document).ready(function(){
   //   contentShow(type, pos);
   // });
 
-  $('.pillarHoverBox').hover(function(){
-    console.log('hover')
-    var type = $(this).data('type');
-    var pos = $(this).position();
-    var self = this;
-    timer = setTimeout(function(){
-      positionTitles(self, pos, type);
-      contentShow(type, pos);
-    },  300);
-  }, function(){
-      clearTimeout(timer);
-  });
+  // ---
 
-  $('body').on('mouseout', '.pillar-active', function(){
-    var type = $(this).data('type');
-    contentHide(type);
-    $('.pillar-active').remove();
-  });
-
-
-  var ilPos = $('.intro-logo').position();
-  var ilPoTop = ilPos.top - $('.pillar-partnerships').height() - 5;
-  console.log(ilPoTop)
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > ilPoTop) {
-      $('.intro-logo').addClass('intro-logo-inactive');
-      $('.intro-gradient').addClass('intro-gradient-inactive');
-      $('.intro-gradient.fixed').removeClass('fixed').css('top', $(window).scrollTop() + 'px');
-      $('.pillar-partnerships').addClass('pillar-partnerships-active')
-    } else {
-      $('.intro-logo').removeClass('intro-logo-inactive');
-      $('.intro-gradient').removeClass('intro-gradient-inactive');
-      $('.intro-gradient').addClass('fixed').css('top', 0);
-      $('.pillar-partnerships').removeClass('pillar-partnerships-active')
-    }
-  });
-
-  $('body').on('click', '.pillar-partnerships', function(){
-    $('html, body').animate({
-      scrollTop: $( '.pillar-partnerships' ).offset().top - 60
-    }, 500);
-  });
+  // $('.pillarHoverBox').hover(function(){
+  //   console.log('hover')
+  //   var type = $(this).data('type');
+  //   var pos = $(this).position();
+  //   var self = this;
+  //   timer = setTimeout(function(){
+  //     positionTitles(self, pos, type);
+  //     contentShow(type, pos);
+  //   },  300);
+  // }, function(){
+  //     clearTimeout(timer);
+  // });
+  //
+  // $('body').on('mouseout', '.pillar-active', function(){
+  //   var type = $(this).data('type');
+  //   contentHide(type);
+  //   $('.pillar-active').remove();
+  // });
+  //
+  //
+  // var ilPos = $('.intro-logo').position();
+  // var ilPoTop = ilPos.top - $('.pillar-partnerships').height() - 5;
+  // console.log(ilPoTop)
+  // $(window).scroll(function() {
+  //   if ($(window).scrollTop() > ilPoTop) {
+  //     $('.intro-logo').addClass('intro-logo-inactive');
+  //     $('.intro-gradient').addClass('intro-gradient-inactive');
+  //     $('.intro-gradient.fixed').removeClass('fixed').css('top', $(window).scrollTop() + 'px');
+  //     $('.pillar-partnerships').addClass('pillar-partnerships-active')
+  //   } else {
+  //     $('.intro-logo').removeClass('intro-logo-inactive');
+  //     $('.intro-gradient').removeClass('intro-gradient-inactive');
+  //     $('.intro-gradient').addClass('fixed').css('top', 0);
+  //     $('.pillar-partnerships').removeClass('pillar-partnerships-active')
+  //   }
+  // });
+  //
+  // $('body').on('click', '.pillar-partnerships', function(){
+  //   $('html, body').animate({
+  //     scrollTop: $( '.pillar-partnerships' ).offset().top - 60
+  //   }, 500);
+  // });
 
 });
 
@@ -10363,6 +10368,127 @@ $(document).ready(function(){
       }
 
   });
+
+});
+
+// number of drops created.
+var nbDrop = 100;
+
+// function to generate a random number range.
+function randRange( minNum, maxNum) {
+  return (Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
+}
+
+// function to generate drops
+function createRain() {
+	for( i=1;i<nbDrop;i++) {
+	var dropLeft = randRange(0,1600);
+	var dropTop = randRange(-1000,1400);
+    var ran = Math.floor((Math.random() * 4 + 1));
+	$('.rain-drops').append('<div class="drop drop-'+ran+'" id="drop'+i+'"></div>');
+	$('#drop'+i).css('left',dropLeft);
+	$('#drop'+i).css('top',dropTop);
+	}
+}
+
+var blobScatter = function(x, y, ran) {
+  var html = '<div class="rain-content-mouse rain-content-mouse-'+ran+' fadeOut" style="top:'+y+'px; left:'+x+'px;"></div>';
+  $(html).appendTo('.rain-content').delay(3000).fadeOut(1);
+}
+
+$(document).ready(function(){
+
+  $('body').click(function(e) {
+    if ( $('.rain').hasClass('rain-click') ) {
+      var y = e.offsetY - 500;
+      var x = e.offsetX - 500;
+      var ran = Math.floor((Math.random() * 3) + 1);
+      var html = '<div class="rain-content-mouse rain-content-mouse-'+ran+' fadeOut" style="top:'+y+'px; left:'+x+'px;"></div>';
+      blobScatter(x, y, ran);
+
+      setTimeout(function(){
+        if (x > 0) {
+          var newX = x - 200;
+          blobScatter(newX, y, ran);
+        } else {
+          var newX = x + 200;
+          blobScatter(newX, y, ran);
+        }
+      }, 400);
+      setTimeout(function(){
+        if (x > 0) {
+          var newX = x - 400;
+          blobScatter(newX, y, ran);
+        } else {
+          var newX = x + 400;
+          blobScatter(newX, y, ran);
+        }
+      }, 800);
+    }
+  });
+
+
+  $('body').on('click', '#rainDropsTrigger', function(){
+    createRain();
+  });
+
+  $('body').on('click', '#rainFallTrigger', function(e) {
+    e.preventDefault();
+    $('.rain-content-fall').addClass('animate');
+    $('.rain-content-fall').addClass('active');
+    setTimeout(function(){
+      $('.rain-content-fall').removeClass('animate').removeClass('active');
+    }, 2000);
+  });
+
+  $('body').on('click', '#rainPulseTrigger', function(e) {
+    e.preventDefault();
+    $('.rain-content-pulse').fadeIn(500)
+    setTimeout(function(){
+      $('.rain-content-pulse').fadeOut(500)
+    }, 500);
+  });
+
+  $('body').on('click', '#rainImageTrigger', function(e) {
+    e.preventDefault();
+    $('.rain-content-image').fadeToggle(500)
+    $('.rain').toggleClass('dim');
+  });
+
+  $('body').on('click', '#rainFollowTrigger', function(e) {
+    e.preventDefault();
+    $('.rain').toggleClass('rain-mousemove');
+  });
+
+  $('body').on('click', '#rainClickTrigger', function(e) {
+    e.preventDefault();
+    $('.rain').toggleClass('rain-click');
+  });
+
+  var blob = function(x, y, ran) {
+    var html = '<div class="rain-content-mouse rain-content-mouse-'+ran+' fadeOut" style="top:'+y+'px; left:'+x+'px;"></div>';
+    $(html).appendTo('.rain-content').delay(3000).fadeOut(1);
+  }
+
+  $(window).on('mousemove', function(e) {
+    if ( $('.rain').hasClass('rain-mousemove') ) {
+        var x = e.screenY - 500;
+        var y = e.screenX - 500;
+        var ran = Math.floor((Math.random() * 3) + 1);
+        // blob(x, y, ran);
+
+        var html = '<div class="rain-content-mouse rain-content-mouse-'+ran+' fadeOut" style="top:'+y+'px; left:'+x+'px;"></div>';
+        $(html).appendTo('.rain-content').delay(3000).fadeOut(1);
+    }
+  });
+
+  // $(document).on("ready", ".rain-content-mouse", function(){
+  //   console.log('hi');
+  //    $(this).fadeOut(500);
+  //    setTimeout(function(){
+  //      $(this).remove();
+  //    }, 500);
+  // });
 
 });
 

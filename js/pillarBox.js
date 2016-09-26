@@ -46,47 +46,49 @@ $(document).ready(function(){
   //   contentShow(type, pos);
   // });
 
-  $('.pillarHoverBox').hover(function(){
-    console.log('hover')
-    var type = $(this).data('type');
-    var pos = $(this).position();
-    var self = this;
-    timer = setTimeout(function(){
-      positionTitles(self, pos, type);
-      contentShow(type, pos);
-    },  300);
-  }, function(){
-      clearTimeout(timer);
-  });
+  // ---
 
-  $('body').on('mouseout', '.pillar-active', function(){
-    var type = $(this).data('type');
-    contentHide(type);
-    $('.pillar-active').remove();
-  });
-
-
-  var ilPos = $('.intro-logo').position();
-  var ilPoTop = ilPos.top - $('.pillar-partnerships').height() - 5;
-  console.log(ilPoTop)
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > ilPoTop) {
-      $('.intro-logo').addClass('intro-logo-inactive');
-      $('.intro-gradient').addClass('intro-gradient-inactive');
-      $('.intro-gradient.fixed').removeClass('fixed').css('top', $(window).scrollTop() + 'px');
-      $('.pillar-partnerships').addClass('pillar-partnerships-active')
-    } else {
-      $('.intro-logo').removeClass('intro-logo-inactive');
-      $('.intro-gradient').removeClass('intro-gradient-inactive');
-      $('.intro-gradient').addClass('fixed').css('top', 0);
-      $('.pillar-partnerships').removeClass('pillar-partnerships-active')
-    }
-  });
-
-  $('body').on('click', '.pillar-partnerships', function(){
-    $('html, body').animate({
-      scrollTop: $( '.pillar-partnerships' ).offset().top - 60
-    }, 500);
-  });
+  // $('.pillarHoverBox').hover(function(){
+  //   console.log('hover')
+  //   var type = $(this).data('type');
+  //   var pos = $(this).position();
+  //   var self = this;
+  //   timer = setTimeout(function(){
+  //     positionTitles(self, pos, type);
+  //     contentShow(type, pos);
+  //   },  300);
+  // }, function(){
+  //     clearTimeout(timer);
+  // });
+  //
+  // $('body').on('mouseout', '.pillar-active', function(){
+  //   var type = $(this).data('type');
+  //   contentHide(type);
+  //   $('.pillar-active').remove();
+  // });
+  //
+  //
+  // var ilPos = $('.intro-logo').position();
+  // var ilPoTop = ilPos.top - $('.pillar-partnerships').height() - 5;
+  // console.log(ilPoTop)
+  // $(window).scroll(function() {
+  //   if ($(window).scrollTop() > ilPoTop) {
+  //     $('.intro-logo').addClass('intro-logo-inactive');
+  //     $('.intro-gradient').addClass('intro-gradient-inactive');
+  //     $('.intro-gradient.fixed').removeClass('fixed').css('top', $(window).scrollTop() + 'px');
+  //     $('.pillar-partnerships').addClass('pillar-partnerships-active')
+  //   } else {
+  //     $('.intro-logo').removeClass('intro-logo-inactive');
+  //     $('.intro-gradient').removeClass('intro-gradient-inactive');
+  //     $('.intro-gradient').addClass('fixed').css('top', 0);
+  //     $('.pillar-partnerships').removeClass('pillar-partnerships-active')
+  //   }
+  // });
+  //
+  // $('body').on('click', '.pillar-partnerships', function(){
+  //   $('html, body').animate({
+  //     scrollTop: $( '.pillar-partnerships' ).offset().top - 60
+  //   }, 500);
+  // });
 
 });

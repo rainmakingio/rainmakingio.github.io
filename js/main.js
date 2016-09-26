@@ -6,3 +6,4 @@
 //=require menu.js
 //=require slashLine.js
 //=require indexb.js
+//=require rain.js
