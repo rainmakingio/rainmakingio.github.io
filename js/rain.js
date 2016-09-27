@@ -99,13 +99,14 @@ $(document).ready(function(){
 
   $(window).on('mousemove', function(e) {
     if ( $('.rain').hasClass('rain-mousemove') ) {
-        var x = e.screenY - 500;
-        var y = e.screenX - 500;
+        var x = e.clientX - 500;
+        var y = e.clientY - 500;
+        console.log(x, y)
         var ran = Math.floor((Math.random() * 3) + 1);
-        // blob(x, y, ran);
+        blob(x, y, ran);
 
-        var html = '<div class="rain-content-mouse rain-content-mouse-'+ran+' fadeOut" style="top:'+y+'px; left:'+x+'px;"></div>';
-        $(html).appendTo('.rain-content').delay(3000).fadeOut(1);
+        // var html = '<div class="rain-content-mouse rain-content-mouse-'+ran+' fadeOut" style="top:'+y+'px; left:'+x+'px;"></div>';
+        // $(html).appendTo('.rain-content').delay(3000).fadeOut(1);
     }
   });
 
